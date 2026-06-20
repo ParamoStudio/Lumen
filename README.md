@@ -43,6 +43,7 @@ And just like that, you've found anything. Whatever you were after.
 |---|---|---|
 | `word word` | fuzzy terms (AND), path-aware | `proj plan` |
 | `.ext` | filter by extension (OR) | `.pdf .mp4` |
+| `-` | show "files" only |
 | `-code` | filter by category | `-d` (docs), `-a` (audio) |
 | `--code` | order results | `--dc` created · `--dm` modified · `--big` · `--small` |
 | `--code,arg` | date arguments (combinable, order-free) | `--dc,2024` · `--dc,mar` · `--dc,week` · `--dc,mar,2024` |
