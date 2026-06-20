@@ -1,5 +1,10 @@
-# Lumen — Find Anything
+<div align="center">
+<img width="128" height="128" alt="lumen-128" src="https://github.com/user-attachments/assets/034327b9-3364-46a2-9909-06ca5ea48f1c" />
 
+
+  # Lumen — Find Anything
+
+</div>
 Scoped fuzzy file search across the folders you actually work in. Jump into a favorite
 folder with a shortcut and find anything inside instantly — no Finder, no clicking through
 subfolders. Plenty of small tools to find what you want fast, with minimal typing.
