@@ -5,65 +5,78 @@
   #  Lumen — Find Anything
 </div>
 
-
 Scoped fuzzy file search across the folders you actually work in. Jump into a favorite
-folder with a shortcut and find anything inside instantly without opening Finder or
-clicking through subfolders. Plenty of tools available to find anything fast with minimal typing.
+folder with a shortcut and find anything inside instantly — no Finder, no clicking through
+subfolders. Plenty of small tools to find what you want fast, with minimal typing.
 
-Quick view, copy path and show in finder commands with just one hand, too!
+**No telemetry. No accounts. No subscriptions. No bullshit.** Local-first, keyboard-first,
+and yours to configure.
 
-Lumen **navigator first, search second**: enter a workspace and you see its top level,
-like opening the folder; start typing and it becomes a recursive fuzzy search scoped to
-that folder.
+Lumen is **navigator first, search second**: enter a workspace and you see its top level,
+like opening the folder. Start typing and it turns into a recursive fuzzy search scoped to
+that folder. Want something outside your folders? Type `h ` and you're searching your whole
+home, freely.
 
-Want to find anything else? Just type h + space and you are searching freely.
+## So... now what?
 
-## Features
+Type the short alias of a folder or workspace you want to open. Hit space. You're in. That easy.
 
-- **Workspaces** — pin your favorite folders (disciplines, projects, asset libraries) and
-  enter one by typing its alias (or number) + space, e.g. `cr ` for Ceramica.
-- **Fast fuzzy search** — powered by `fd` (indexing) and `fzf` (ranking). Sub-second on
-  scoped folders.
-- **A small, sharp grammar** in the search bar:
-  - `term1 term2` — fuzzy terms, ANDed, path-aware.
-  - `.pdf` `.mp4` — filter by extension (OR).
-  - `-d` `-a` `-v` `-i` … — filter by category (editable groups of extensions).
-  - `--dc` `--dm` `--big` `--small` — order by created/modified date or size.
-  - `--dc,2024` `--dc,mar` `--dc,week` — date arguments (year, month, today/week/month/year),
-    combinable and order-free: `--dc,mar,2024`.
-- **Home mode** — type `h ` to fuzzy-search your whole home folder (`~`), with the same
-  grammar and keyboard. Streams `fd | fzf` so a huge tree never lands in memory; configured
-  workspaces are excluded by default so Home stays out of your scoped corpus.
-- **Keyboard, one-handed** — `↵` open · `⌘C` copy the containing folder · `⌘⇧C` copy the
-  full path · `⌘F` reveal in Finder · `⌘D` Quick Look · `⌘R` refresh the index.
-- **Fully configurable** — categories, order tools (codes + enable/disable) and date-filter
-  keywords are all editable in *Manage Tools*. Because everything is a code you rename,
-  the grammar needs no translation.
-- **Portable config** — export your whole setup to a self-documenting JSON (back it up,
-  move it to another machine, or hand it to an AI to understand your organization), and
-  import it back.
-- **Bilingual UI** (English / Español) with importable language packs.
+Now search — a couple of letters is usually enough. Need to narrow it down? Filter by
+extension, date, or file type. Don't like the defaults I shipped? Change them. It's yours
+now, exactly how you need it.
+
+And just like that, you've found anything. Whatever you were after.
+
+## Why you'll like it
+
+- **It's fast.** `fd` + `fzf` under the hood. Sub-second on your scoped folders.
+- **It's keyboard-first.** Open, Quick Look, Copy Path and Show in Finder — all with one
+  hand, no mouse.
+- **It's configurable.** Categories, ordering tools and date filters are all editable codes
+  you rename to whatever you like (which is also why it needs no translation).
+- **It stays out of your way.** No background indexing, no daemon, no network at runtime
+  after the first launch.
+
+## The search bar grammar
+
+| You type | It does | Example |
+|---|---|---|
+| `word word` | fuzzy terms (AND), path-aware | `proj plan` |
+| `.ext` | filter by extension (OR) | `.pdf .mp4` |
+| `-code` | filter by category | `-d` (docs), `-a` (audio) |
+| `--code` | order results | `--dc` created · `--dm` modified · `--big` · `--small` |
+| `--code,arg` | date arguments (combinable, order-free) | `--dc,2024` · `--dc,mar` · `--dc,week` · `--dc,mar,2024` |
+
+## Keyboard
+
+| Key | Action |
+|---|---|
+| `↵` | Open (file in its app, folder in Finder) |
+| `⌘C` | Copy the containing folder path |
+| `⌘⇧C` | Copy the full path |
+| `⌘F` | Show in Finder |
+| `⌘D` | Quick Look (toggle) |
+| `⌘R` | Refresh the index |
+
+## Home mode
+
+Type `h ` to fuzzy-search everything under `~`, with the same grammar and keyboard. It
+streams `fd | fzf` so a huge tree never lands in memory, and your configured workspaces are
+excluded by default — so Home stays for the stuff *outside* your scoped folders.
 
 ## Requirements
 
-- **macOS** (Apple Silicon). Lumen ships the `fd` and `fzf` binaries — no setup, no network
-  at runtime.
-
-## How it works
-
-`fd` walks the scope once on entering and the list is cached for the session; each keystroke
-filters that list with `fzf`'s native scoring, on top of which Lumen layers a structure-aware
-ranking (folders first, matches in earlier path segments first, prefix > contains > scattered).
-Nothing is indexed in the background and nothing runs as a daemon.
+- **macOS** (Apple Silicon and Intel). No setup: Lumen downloads the `fd` and `fzf` binaries
+  for your Mac on first launch, then runs fully offline.
 
 ## Setup
 
 1. **Manage Workspaces** — add a folder, give it a name and one or more aliases.
 2. Open **Lumen**, type your alias + space, and search.
-3. Optionally open **Manage Tools** to tweak categories, order tools and date filters, or
-   switch the UI language in the extension preferences.
+3. **Manage Tools** to tweak categories, ordering tools and date filters — or switch the UI
+   language (English / Español / your own imported pack) in the extension preferences.
 
 ---
 
-Made by **Páramo Studio**. Open source — explore the code and other projects (Óculo,
+Made by **Páramo Studio**. Open source — explore the code and my other projects (Óculo,
 Páramo Kiln Monitor, and more) on [GitHub](https://github.com/ParamoStudio).
