@@ -17,6 +17,9 @@ like opening the folder. Start typing and it turns into a recursive fuzzy search
 that folder. Want something outside your folders? Type `h ` and you're searching your whole
 home, freely.
 
+<img width="800" height="500" alt="lumenfinal-ezgif com-optimize" src="https://github.com/user-attachments/assets/d75d6c1c-3015-4d53-8e2e-bdcfb1f66b66" />
+
+
 ## So...now what?
 
 Type the short alias of a folder you want to open. Hit space. You're in. That easy.
@@ -26,6 +29,9 @@ extension, date, or file type. Don't like the defaults I shipped? Change them. I
 now, exactly how you need it.
 
 And just like that, you've found anything. Whatever you were after.
+
+<img width="1000" height="625" alt="lumen-1" src="https://github.com/user-attachments/assets/41d282fd-db04-4667-9a74-9548e8bfcb68" />
+
 
 ## Why you'll like it
 
@@ -77,6 +83,9 @@ excluded by default — so Home stays for the stuff *outside* your scoped folder
 3. **Manage Tools** to tweak categories, ordering tools and date filters.
 
 ---
+
+<img width="1000" height="625" alt="lumen-3" src="https://github.com/user-attachments/assets/5c85b5b8-59b2-4e90-939d-ba058a55a810" />
+
 
 Made by **Páramo Studio**. Open source — explore the code and my other projects (Óculo,
 Páramo Kiln Monitor, and more) on [GitHub](https://github.com/ParamoStudio).
