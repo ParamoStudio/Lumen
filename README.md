@@ -69,8 +69,7 @@ excluded by default — so Home stays for the stuff *outside* your scoped folder
 
 1. **Manage Workspaces** — add a folder, give it a name and one or more aliases.
 2. Open **Lumen**, type your alias + space, and search.
-3. **Manage Tools** to tweak categories, ordering tools and date filters — or switch the UI
-   language (English / Español / your own imported pack) in the extension preferences.
+3. **Manage Tools** to tweak categories, ordering tools and date filters.
 
 ---
 
