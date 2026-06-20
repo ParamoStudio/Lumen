@@ -1,5 +1,9 @@
-# Lumen — Find Anything
-<img width="512" height="512" alt="lumen" src="https://github.com/user-attachments/assets/4ff026a3-034e-49ad-bd26-8b8ce1fa3191" />
+<div align="center">
+  <img width="128" height="128" alt="icono_128" src="https://github.com/user-attachments/assets/678ed3e0-d539-4837-88c7-9fbe06648145" />
+
+
+  #  Lumen — Find Anything
+</div>
 
 
 Scoped fuzzy file search across the folders you actually work in. Jump into a favorite
